@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../app/styles.scss';
+import styles from '../styles/lists.scss';
 
 export default function DigitalMonster({ id, name, image, level, attribute }) {
   return (

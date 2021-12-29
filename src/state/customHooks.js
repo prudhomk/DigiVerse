@@ -8,7 +8,7 @@ export const useDigimon = (page) => {
   useEffect(async () => {
     const res = await fetchDigimon(page);
     setDigiLength(res.length);
-    setDigimon(res.slice((page - 1) * 10, page * 10));
+    setDigimon(res.slice((page - 1) * 5, page * 5));
     setLoader(false);
   }, [page, loader]);
   

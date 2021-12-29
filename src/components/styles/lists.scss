@@ -1,8 +1,27 @@
 .digimon {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 10% auto auto;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  height: 17rem;
+  width: 200px;
+  border: 2px solid red;
+
+  img {
+    height: 10rem;
+    width: 12rem;
+    object-fit: contain;
+    place-self: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 5px;
+  }
 }
 
 .list {
@@ -11,4 +30,19 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    text-decoration: underline;
+  }
 }
