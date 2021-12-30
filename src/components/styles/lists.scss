@@ -46,3 +46,12 @@
     text-decoration: underline;
   }
 }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px red solid;
+  background-color: red;
+}
