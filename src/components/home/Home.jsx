@@ -19,7 +19,7 @@ export default function Home() {
       <p>Alternatively, checkout our DigiViewer to look through the catalog, or add additional Digimon!</p>
       <br></br>
       <h3>Enter the Digiverse</h3>
-      <ArrowDownwardIcon/>
+      <ArrowDownwardIcon className={styles.shake}/>
       <img onClick={handleDigimon} src="./digivice.webp"/>
     
     </div>
