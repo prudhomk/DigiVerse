@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react';
-import { fetchDigimon, fetchDigitalMonster } from '../services/dapi.js';
+import { fetchDigimons, fetchDigitalMonster } from '../services/dapi.js';
 
-export const useDigimon = (page) => {
-  const [digimon, setDigimon] = useState([]);
+export const useDigimons = (page) => {
+  const [digimons, setDigimons] = useState([]);
   const [digiLength, setDigiLength] = useState([]);
   const [loader, setLoader] = useState(true);
   useEffect(async () => {
-    const res = await fetchDigimon(page);
+    const res = await fetchDigimons(page);
     setDigiLength(res.length);
-    setDigimon(res.slice((page - 1) * 5, page * 5));
+    setDigimons(res.slice((page - 1) * 20, page * 20));
     setLoader(false);
   }, [page, loader]);
   
-  return { digimon, digiLength, loader };
+  return { digimons, digiLength, loader };
 };
 
 export const useDigitalMonster = (id) => {

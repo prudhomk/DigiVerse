@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Digimon Basic';
+  src: url("../../../public/fonts/DigimonBasic.woff") format("woff");
+}
+
+body, html {
+  background-color: lightblue;
+  font-family: 'Digimon Basic';
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    cursor: pointer;
+    padding: 10px;
+  }
+}
+
+.header {
+  background-color: teal;
+}
+
+.logo {
+  width: 450px;
+  height: 100px;
+}

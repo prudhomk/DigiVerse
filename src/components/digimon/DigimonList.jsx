@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { useDigimon } from '../../state/customHooks.js';
+import { useDigimons } from '../../state/customHooks.js';
 import DigitalMonster from './DigitalMonster';
 import Loader from '../../services/Loader';
 import styles from '../styles/lists.scss';
 
 const DigimonList = () => {
   const [page, setPage] = useState(1);
-  const { digimon, digiLength, loader } = useDigimon();
+  const { digimons, digiLength, loader } = useDigimons();
 
-  const digimonElements = digimon.map(digi => (
+  const digimonElements = digimons.map(digi => (
     <li key={digi.id}>
       <DigitalMonster {...digi}/>
     </li>

@@ -10,7 +10,7 @@ export default function DigimonDetail() {
   const history = useHistory();
 
   const handleReturn = () => {
-    history.push('/digimon');
+    history.push('/digimons');
   };
 
   return (

@@ -1,19 +1,19 @@
-export const fetchDigimon = async () => {
-  const res = await fetch(`${process.env.API}/api/v1/digimon`);
-  const digimon = await res.json();
+export const fetchDigimons = async () => {
+  const res = await fetch(`${process.env.API}/api/v1/digimons`);
+  const digimons = await res.json();
   
-  return digimon;
+  return digimons;
 };
 
 export const fetchDigitalMonster = async (id) => {
-  const res = await fetch(`${process.env.API}/api/v1/digimon/${id}`);
+  const res = await fetch(`${process.env.API}/api/v1/digimons/${id}`);
   const digitalMonster = await res.json();
 
   return digitalMonster;
 };
 
 export const createItem = async (digitalMonster) => {
-  const res = await fetch(`${process.env.API}/api/v1/digimon`, {
+  const res = await fetch(`${process.env.API}/api/v1/digimons`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify(digitalMonster)
@@ -24,7 +24,7 @@ export const createItem = async (digitalMonster) => {
 };
 
 export const editItem = async (item, id) => {
-  const res = await fetch(`${process.env.API}/api/v1/digimon/${id}`, {
+  const res = await fetch(`${process.env.API}/api/v1/digimons/${id}`, {
     method: 'PUT',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify(item, id)
@@ -35,7 +35,7 @@ export const editItem = async (item, id) => {
 };
 
 export const deleteItem = async (id) => {
-  const res = await fetch(`${process.env.API}/api/v1/digimon/${id}`, {
+  const res = await fetch(`${process.env.API}/api/v1/digimons/${id}`, {
     method: 'DELETE'
   });
 
