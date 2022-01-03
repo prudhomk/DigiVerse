@@ -6,10 +6,13 @@ export const useDigimons = (page) => {
   const [digiLength, setDigiLength] = useState([]);
   const [loader, setLoader] = useState(true);
   useEffect(async () => {
-    const res = await fetchDigimons(page);
+
+    const res = await fetchDigimons();
+    
     setDigiLength(res.length);
-    setDigimons(res.slice((page - 1) * 20, page * 20));
+    setDigimons(res);
     setLoader(false);
+    
   }, [page, loader]);
   
   return { digimons, digiLength, loader };

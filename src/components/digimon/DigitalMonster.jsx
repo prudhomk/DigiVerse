@@ -5,7 +5,7 @@ import styles from '../styles/lists.scss';
 export default function DigitalMonster({ id, name, image, level, attribute }) {
   return (
     <>
-      <Link to={`/digimon/${id}`}>
+      <Link to={`/digimons/${id}`}>
         <div className={styles.digimon}>
           <p>Name: {name}</p>
           <img src={`./assets/${image}`}/>

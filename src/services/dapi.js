@@ -1,7 +1,7 @@
 export const fetchDigimons = async () => {
   const res = await fetch(`${process.env.API}/api/v1/digimons`);
   const digimons = await res.json();
-  
+
   return digimons;
 };
 

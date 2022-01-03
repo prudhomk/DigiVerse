@@ -16,7 +16,7 @@ export default function DigimonDetail() {
   return (
     <div className={styles.details}>
       <div>
-        <img src={`/assests/${digitalMonster.image}`}/>
+        <img src={`/assets/${digitalMonster.image}`}/>
         <div>
           <h1>{digitalMonster.name}</h1>
           <p>Series: {digitalMonster.series}</p>

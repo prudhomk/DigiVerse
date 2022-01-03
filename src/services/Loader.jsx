@@ -8,7 +8,7 @@ export default function Loader() {
   const randomNum = Math.floor(Math.random() * loaders.length);
   const randomLoader = () => {
     const chosenGif = './' + loaders[randomNum];
-    console.log(chosenGif);
+    
     return chosenGif;
   };
 
