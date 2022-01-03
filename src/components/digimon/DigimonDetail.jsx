@@ -26,7 +26,7 @@ export default function DigimonDetail() {
           <p>Can Digivolve: {JSON.stringify(digitalMonster.canDigivolve)}</p>
           <p>Tamer: {digitalMonster.tamer}</p>
 
-          <div>
+          <div className={styles.return}>
             <button onClick={handleReturn}>Return to previous page</button>
           </div>
         </div>

@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { useHistory } from 'react-router';
 import styles from '../styles/Home.scss';
+
 
 export default function Header() {
 
