@@ -15,6 +15,7 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <img className={styles.logo} onClick={handleHome} src="./logo.png"/>
+      <img className={styles.agumon} src="./agu1.png"/>
     </div>
   );
 }

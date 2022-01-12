@@ -8,8 +8,9 @@
   padding: 5px;
   height: 17rem;
   width: 200px;
-  border: 2px solid red;
-
+  border: 2px solid blue;
+  background-color: rgb(35, 35, 214);
+  color: gold;
   img {
     height: 10rem;
     width: 12rem;
@@ -52,10 +53,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(61, 61, 215);
   margin-top: 10%;
+  margin-left: 33%;
+  margin-right: 33%;
+  padding: 30px;
+  color: gold;
+  border-radius: 20px;
 
   img {
-    border: solid 10px blue;
+    border: solid 10px rgb(62, 142, 234);
   }
 
   h1 {
